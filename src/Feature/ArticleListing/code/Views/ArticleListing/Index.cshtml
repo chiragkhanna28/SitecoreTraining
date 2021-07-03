@@ -1,0 +1,37 @@
+﻿@using Sitecore.Data
+@model Sitecore.Foundation.Domain.Models.Listing
+
+<div>
+    <h1 class="title">@Html.Sitecore().Field("__Display Name", Model.ParentItem)</h1>
+
+    <div class="tile is-ancestor">
+        <div class="tile is-vertical is-parent">
+            @foreach (var article in Model.Posts)
+            {
+
+                <div class="tile is-child box">
+                    @{
+                        var authorItem = ((Sitecore.Data.Fields.ReferenceField)article.Item.Fields["Author"]).TargetItem;
+                    }
+                    <a href="@article.Url">
+                        <div class="columns">
+                            <div class="column media center">
+                                <figure class="image">
+                                    @Html.Sitecore().Field("Primary Image", article.Item, new { DisableWebEdit = true, mh = "150" })
+                                </figure>
+                            </div>
+                            <div class="column is-three-quarters media-content">
+
+                                <p class="is-4">@Html.Sitecore().Field("Page Title", article.Item, new { DisableWebEdit = true })</p>
+
+                                <h3>@Html.Sitecore().Field("Author Name", authorItem, new { DisableWebEdit = true })</h3>
+                                <time>@Html.Sitecore().Field("Date Time", article.Item, new { DisableWebEdit = true })</time>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+

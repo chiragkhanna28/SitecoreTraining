@@ -1,0 +1,9 @@
+﻿<Project>
+  <PropertyGroup>
+    <Site Server="trainingdemosc.dev.local" UserName="sitecore\admin" IsRemoteSitecore="True" />
+  </PropertyGroup>
+  <File Include="Views\Website\Layouts\Default.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  <File Include="/Views/Website/Layouts/Default.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{D74786A5-2BA0-48D8-8BDF-A2CA3A5736C8}</Item>
+  </File>
+</Project>

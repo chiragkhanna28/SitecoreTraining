@@ -1,0 +1,25 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Analytics.Extensions
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+@{
+  Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@Html.Sitecore().Field("MetaTitle", new { DisableWebEdit = true })</title>
+    @Html.Sitecore().VisitorIdentification()
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="~/assets/css/clothingco-styles.css" />
+    <link rel="stylesheet" href="~/assets/css/custom.css" />
+</head>
+<body>
+    @Html.Sitecore().Rendering("{1E63817E-6C8B-4D45-8955-EE34175CEFD5}")
+    <div>
+        @Html.Sitecore().Placeholder("main")
+    </div>
+    @Html.Sitecore().ControllerRendering("Footer", "Index")
+    <script src="~/assets/js/clothingco-script.js"></script>
+</body>
+</html>

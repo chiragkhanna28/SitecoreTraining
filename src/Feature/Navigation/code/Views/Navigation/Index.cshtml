@@ -1,0 +1,10 @@
+﻿@model Sitecore.Foundation.Domain.Models.NavGroup
+
+@foreach (var navItem in Model.NavItems)
+{
+    <div class="navbar-item">
+        <a class="navbar-link is-arrowless" href="@navItem.Url">
+            @Html.Sitecore().Field("__Display Name", navItem.Item, new { DisableWebEdit = true })
+        </a>
+    </div>
+}

@@ -1,0 +1,15 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+@{
+    var homeItem = Sitecore.Context.Database.GetItem(Sitecore.Context.Site.StartPath);
+}
+<nav class="navbar is-light" role="navigation" aria-label="dropdown navigation">
+    @Html.Sitecore().ControllerRendering("Navigation", "Index")
+    @*The Navigation items will go here.*@
+    <div class="navbar-end">
+        <div class="navbar-item">
+            @Html.Sitecore().Field("Primary Text", homeItem, new { DisableWebEdit = true })
+        </div>
+    </div>
+</nav>

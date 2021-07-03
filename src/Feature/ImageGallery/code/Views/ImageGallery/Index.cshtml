@@ -1,0 +1,13 @@
+﻿@model Sitecore.Feature.ImageGallery.Models.ImageGalleryUrls
+
+<div class="columns">
+    @if (Model != null && Model.ImageUrls!=null && Model.ImageUrls.Any())
+    {
+        foreach (var img in Model.ImageUrls)
+        {
+            <div class="column">
+                <img src="@img" />
+            </div>
+        }
+    }
+</div>
