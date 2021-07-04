@@ -79,6 +79,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Banner", "Banner", "{98E8C6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Banner", "src\Feature\Banner\code\Sitecore.Feature.Banner.csproj", "{314E099A-CBE4-4DC2-BE6A-7D2AD2951BBF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Indexing", "Indexing", "{E0A418F6-8ABD-4018-9C8D-96ECEAAE155C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Indexing", "src\Foundation\Indexing\code\Sitecore.Foundation.Indexing.csproj", "{9F033DE9-E8DC-4105-A890-D34E05DAE7EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +145,10 @@ Global
 		{314E099A-CBE4-4DC2-BE6A-7D2AD2951BBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{314E099A-CBE4-4DC2-BE6A-7D2AD2951BBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{314E099A-CBE4-4DC2-BE6A-7D2AD2951BBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F033DE9-E8DC-4105-A890-D34E05DAE7EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F033DE9-E8DC-4105-A890-D34E05DAE7EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F033DE9-E8DC-4105-A890-D34E05DAE7EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F033DE9-E8DC-4105-A890-D34E05DAE7EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -174,6 +182,8 @@ Global
 		{7B43F1B1-2FC4-410A-AC3B-6295F760D545} = {B222D276-609A-42C6-ABF5-E4BAA53EC904}
 		{98E8C6F4-E2D0-4A30-BFF1-5E18C7838972} = {79B8BE9A-F98D-4AB9-A06C-FF8EB6F2D961}
 		{314E099A-CBE4-4DC2-BE6A-7D2AD2951BBF} = {98E8C6F4-E2D0-4A30-BFF1-5E18C7838972}
+		{E0A418F6-8ABD-4018-9C8D-96ECEAAE155C} = {0022C039-8A2B-483F-95A1-2AE1D7EF5EEB}
+		{9F033DE9-E8DC-4105-A890-D34E05DAE7EA} = {E0A418F6-8ABD-4018-9C8D-96ECEAAE155C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F5115E6A-3189-45A1-A4EC-82B6874A85F8}
